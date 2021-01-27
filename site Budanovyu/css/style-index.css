@@ -1,0 +1,378 @@
+body {
+font-family: Aldrich, Arial, Helvetica, sans-serif;
+background: #fff;
+}
+
+.body {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+margin: 0;
+padding: 0;
+justify-content: space-between;
+}
+
+.main-nav {
+display: flex;
+width: 100%;
+max-width: 1920px;
+align-items: center;
+height: 100px;
+color: black;
+background: #D1C9C9;
+padding-left: 40px;
+padding-right: 20px;
+}
+
+.logo {
+width: 9%;
+height: 54%;
+}
+
+.nav-div {
+width: 700px;
+margin-left: 22%;
+}
+
+nav {
+height: 40px;
+font-size: 11pt;
+font-weight: bold;
+}
+
+nav ul {
+	padding: 0;
+margin: 0 auto;
+}
+
+nav li, nav a {
+display: inline-block;
+list-style-type: none;
+width: 80px;
+text-align: center;
+}
+
+nav li .rent{
+  width: 140px;
+  height: 40px;
+}
+
+nav li:nth-child(2) {
+margin-left: 50px;
+}
+
+.number {
+	width:19%;
+	margin-left: 1%; 
+}
+
+.number a,
+.nav a {
+text-decoration: none;
+color: black;
+}
+
+nav a {
+line-height: 40px;
+width: 90px;
+}
+
+.nav a:hover,
+.number a:hover {
+border-bottom: 2px solid black;
+}
+
+.one-clck {
+
+width: 224px;
+height: 44px;
+}
+
+.one-clck img:hover {
+box-shadow:0 0 6px 6px #555; 
+webkit-transition: all 0.5s ease;
+moz-transition: all 0.5s ease;
+transition: all 0.5s ease;
+border: 1px solid black;
+border-radius: 10px;
+}
+
+.one-clck {
+}
+
+.one-clck:hover {
+}
+
+.button {}
+.btn-quick-sale {
+
+}
+.main-pic {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 824px;
+	align-items: center;
+	width: 100%;
+	max-width: 1920px;
+}
+
+.main-pic .name {
+width: 90%;
+min-height: 200px;
+padding-bottom: 2em;
+padding-top: 3em;
+}
+
+.main-pic h1 {
+font-style: normal;
+font-weight: normal;
+font-size: 10em;
+line-height: 156px;
+letter-spacing: -0.05em;
+text-transform: uppercase;
+text-align: center;
+}
+
+.name span {
+color: #920E18;
+}
+
+.car-main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+width: 100%;
+background-image: url(../img/back-car.png);
+background-repeat: no-repeat;
+background-size: auto; 
+padding-bottom: 27px;
+height: 45rem;
+}
+
+.car-main .descript {
+padding-top: 1.5em;
+margin-bottom: 2em;
+}
+.car-main h2 {
+margin-top: 20px;
+font-style: normal;
+font-weight: normal;
+font-size: 2.5em;
+line-height: 35px;
+letter-spacing: -0.05em;
+}
+
+.img-car {
+width: 50%;
+}
+
+.img-car img {
+object-fit: contain;
+}
+
+.slider-position {
+	padding-left: 0; 
+	padding-right: 0;
+	margin-top: 70px;
+	max-width: 1920px;
+	width: 100%;
+	margin-bottom: 70px;
+}
+    /*!
+     * chiefSlider (https://itchief.ru/lessons/php/feedback-form-for-website)
+     * Copyright 2018 Alexander Maltsev
+     * Licensed under MIT (https://github.com/itchief/feedback-form/blob/master/LICENSE)
+     */
+    .slider {
+    	position: relative;
+      overflow: hidden;
+}
+
+    .slider__wrapper {
+      display: flex;
+      transition: transform 0.6s ease;
+    }
+
+    .slider__item {
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+    }
+
+    .slider__control {
+      position: absolute;
+      top: 30%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      color: #fff;
+      text-align: center;
+      opacity: 0.5;
+      height: 50px;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, .5);
+    }
+
+    .slider__control_show {
+      display: flex;
+    }
+
+    .slider__control:hover,
+    .slider__control:focus {
+      color: #fff;
+      text-decoration: none;
+      outline: 0;
+      opacity: .9;
+    }
+
+    .slider__control_left {
+      left: 0;
+    }
+
+    .slider__control_right {
+      right: 0;
+    }
+
+    .slider__control::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: transparent no-repeat center center;
+      background-size: 100% 100%;
+    }
+
+    .slider__control_left::before {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    }
+
+    .slider__control_right::before {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    }
+
+.price-item {
+align-self: flex-start;
+}
+
+.price-item h3 {
+font-size: 30px;
+font-weight: bold;
+margin-left: 100px;
+}
+
+.price-item span {
+color: #920E18;
+}
+
+.price-item ul {
+	pading: 0;
+	margin-left: 60px;
+}
+
+.price-item li {
+list-style: none;
+padding-left: 24px;
+margin-bottom: 15px;
+font-size: 25px;
+}
+
+.price-item .year {
+    background: url(../img/year.png) no-repeat 0 4px;
+}
+
+.price-item .kpp {
+    background: url(../img/KPP.png) no-repeat 0 4px;
+}
+
+.price-item .condi {
+    background: url(../img/conditioner.png) no-repeat 0 4px;
+}
+
+.features {
+	display: flex;
+	width: 100%;
+	max-width: 1920px;
+	justify-content: space-between;
+	padding-bottom: 10px;
+	padding-left: 40px;
+padding-right: 40px;
+}
+
+.feature-item {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+.footer {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1920px;
+	align-items: center;
+height: 100px;
+color: black;
+background: #D1C9C9;
+padding-left: 40px;
+padding-right: 40px;
+}
+
+.nav-footer {
+
+display: flex;
+flex-direction: column;
+}
+
+.nav-footer a {
+text-decoration: none;
+color: black;
+}
+
+.nav-footer a:hover,
+.number-name a:hover {
+border-bottom: 2px solid black;
+}
+
+.nav-footer ul {
+	padding: 0;
+	margin: 0 auto;
+}
+
+.nav-footer li{
+margin-left: 30px;
+	display: inline-block;
+list-style-type: none;
+margin-bottom: 5px;
+}
+
+.nav-footer li:first-child {
+margin-left: 0;
+}
+
+.number-name {
+	display: flex;
+	justify-content: space-between;
+	font-weight: bold;
+}
+
+.number-name a {
+margin-left: 10px;
+}
+
+.social {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.social p {
+margin-bottom: 5px;
+width: 100%;
+}
+
+.soc-btn {
+	margin-left: 10px;
+}
+.logo-footer {
+	margin-right: 1%;
+}

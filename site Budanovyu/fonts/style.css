@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Aldrich';
+    src: local('Aldrich Regular'), local('Aldrich-Regular'),
+        url('Aldrich-Regular.woff2') format('woff2'),
+        url('Aldrich-Regular.woff') format('woff'),
+        url('Aldrich-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }

@@ -1,0 +1,310 @@
+body {
+font-family: Aldrich, Arial, Helvetica, sans-serif;
+background: #fff;
+}
+
+.body {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+margin: 0;
+padding: 0;
+justify-content: space-between;
+}
+
+.main-nav {
+display: flex;
+width: 100%;
+max-width: 1920px;
+align-items: center;
+height: 100px;
+color: black;
+background: #D1C9C9;
+padding-left: 40px;
+padding-right: 20px;
+}
+
+.logo {
+width: 9%;
+height: 54%;
+}
+
+.nav-div {
+width: 700px;
+margin-left: 22%;
+}
+
+nav {
+height: 40px;
+font-size: 11pt;
+font-weight: bold;
+}
+
+nav ul {
+	padding: 0;
+margin: 0 auto;
+}
+
+nav li, nav a {
+display: inline-block;
+list-style-type: none;
+width: 80px;
+text-align: center;
+}
+
+nav li .rent{
+  width: 140px;
+  height: 40px;
+}
+
+nav li:nth-child(2) {
+margin-left: 50px;
+}
+
+.number {
+	width:19%;
+	margin-left: 1%; 
+}
+
+.number a,
+.nav a {
+text-decoration: none;
+color: black;
+}
+
+nav a {
+line-height: 40px;
+width: 90px;
+}
+
+.nav a:hover,
+.number a:hover {
+border-bottom: 2px solid black;
+}
+
+.one-clck {
+
+width: 224px;
+height: 44px;
+}
+
+.one-clck img:hover {
+box-shadow:0 0 6px 6px #555; 
+webkit-transition: all 0.5s ease;
+moz-transition: all 0.5s ease;
+transition: all 0.5s ease;
+border: 1px solid black;
+border-radius: 10px;
+}
+
+.name {
+background: url(../img/back-second-name.png) no-repeat 0 0/100% 100%;
+width: 100%;
+max-width: 1920px;
+height: 342px;
+padding-top: 3em;
+}
+
+.name h1 {
+font-style: normal;
+font-weight: normal;
+font-size: 10em;
+line-height: 156px;
+letter-spacing: -0.05em;
+text-transform: uppercase;
+text-align: center;
+}
+
+.name span {
+color: #920E18;
+}
+
+.name h2 {
+margin:0;
+padding:30px;
+text-align: center;
+margin-bottom: 20px;
+font-size: 2.5em;
+}
+
+.conditions {
+Display: flex;
+width: 100%;
+max-width: 1920px;
+height: 1390px;
+flex-direction: column;
+}
+
+.top-condi {
+display: flex;
+justify-content: space-between;
+height: 220px;
+align-items: flex-end;
+margin-left: 40px;
+margin-right: 40px;
+border-bottom: 2px solid black;
+}
+
+.top-condi div {
+width: 666px;
+height: 70px;
+margin-bottom: 2%;
+}
+
+.top-condi h2 {
+margin: 0;
+padding: 0;
+
+}
+
+.top-condi div:first-child {
+font-size: 2.5em;
+font-weight: bold;
+
+}
+
+.top-condi div:last-child {
+font-size: 1.5em;
+font-weight: bold;
+
+}
+
+.top-condi p {
+text-align: end;
+padding-top: 35px;
+}
+
+.top-condi a {
+text-decoration: none;
+color: #920E18;
+}
+
+.middle-condi {
+height: 1200px;
+	display: flex;
+	justify-content: space-between;
+	padding-right: 40px;
+}
+
+.middle-condi div {
+height: 95%;
+margin-bottom: 2%;
+width: 51%;
+}
+
+.middle-condi div:last-of-type {
+height: 95%;
+margin-bottom: 2%;
+width: 48%;
+background-image: url(../img/car-main.png);
+background-repeat: no-repeat;
+background-position: 50% 100%;
+background-size: 100% auto;
+-moz-transform: scale(-1, 1);
+-webkit-transform: scale(-1, 1);
+-o-transform: scale(-1, 1);
+transform: scale(-1, 1);
+filter: FlipH;
+-ms-filter: "FlipH";
+}
+
+.middle-condi ul {
+padding: 0;
+padding-left: 40px;
+}
+
+.middle-condi li {
+font-weight: bold;
+list-style: none;
+padding-top: 50px;
+padding-left: 30px;
+font-size: 25px;
+background: url(../img/marker-serv.png) no-repeat 0 56px/auto 15px;
+}
+
+.features {
+	display: flex;
+	width: 100%;
+	max-width: 1920px;
+	justify-content: space-between;
+	padding-bottom: 10px;
+	padding-left: 40px;
+padding-right: 40px;
+}
+
+.feature-item {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+.footer {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1920px;
+	align-items: center;
+height: 100px;
+color: black;
+background: #D1C9C9;
+padding-left: 40px;
+padding-right: 40px;
+}
+
+.nav-footer {
+
+display: flex;
+flex-direction: column;
+}
+
+.nav-footer a {
+text-decoration: none;
+color: black;
+}
+
+.nav-footer a:hover,
+.number-name a:hover {
+border-bottom: 2px solid black;
+}
+
+.nav-footer ul {
+	padding: 0;
+	margin: 0 auto;
+}
+
+.nav-footer li{
+margin-left: 30px;
+	display: inline-block;
+list-style-type: none;
+margin-bottom: 5px;
+}
+
+.nav-footer li:first-child {
+margin-left: 0;
+}
+
+.number-name {
+	display: flex;
+	justify-content: space-between;
+	font-weight: bold;
+}
+
+.number-name a {
+margin-left: 10px;
+}
+
+.social {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.social p {
+margin-bottom: 5px;
+width: 100%;
+}
+
+.soc-btn {
+	margin-left: 10px;
+}
+.logo-footer {
+	margin-right: 1%;
+}

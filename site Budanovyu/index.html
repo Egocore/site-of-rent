@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Прокат автомобилей в Барнауле</title>
+    <link rel="stylesheet" href="css/style-index.css">
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+    <link href = "fonts/style.css" rel = "stylesheet" type = "text/css" />
+  </head>
+<body>
+  <div class="body">
+<div class="main-nav">
+	<div class="logo">
+    <a href="#"><img src="img/logo.png" alt="AltayCar" ></a>
+    </div>
+    <div class="number">
+        <a href="tel:+79133697000">+7(913)-369-70-00</a>
+    </div>
+    <div class="nav-div">
+    <nav class="nav">
+        <ul class="navi">
+<li><a class="rent" href="conditions-of-rent.html">Условия аренды</a></li>
+<li><a href="cars.html">Автопарк</a></li>
+<li><a href="services.html">Услуги</a></li>
+<li><a href="#">Контакты</a></li>
+<a href="#" id="pull">Меню</a>
+    </ul>
+</nav>
+</div>
+<div class="one-clck">
+    <a class="button btn-quick-sale" href="#"><img src="img/one-clik-btn.jpg" alt="Заказать в одни клик"></a>
+	</div>
+    </div>
+	<div class="main-pic">
+        <div class="name">
+          <h1>ALTAY <span>CAR</span></h1>
+    </div>
+        <div class="car-main">
+            <div class="descript">
+        <h2>Аренда авто в Барнауле</h2>
+    </div>
+    <div class="img-car">
+            <img src="img/car-main.png" alt="ALTAY CAR">
+        </div>
+        </div>
+    </div>
+    <div class="slider-position">
+          <div class="slider">
+    <div class="slider__wrapper">
+      <div class="slider__item">
+        <div style="height: 700px; background: #fff; display: flex; flex-direction: column; justify-content: space-around; align-items: center;">
+     <div class="car-rent"><a href="#"><img src="img/solaris1.png"></a></div>
+     <div class="price-item">
+        <h3>Hyundai Solaris 1.6</h3>
+        <h3><span>От 1800 р/сутки</span></h3>
+         <ul>
+             <li class="year">Год выпуска - 2014</li>
+             <li class="kpp">Коробка передач - автомат</li>
+             <li class="condi">Кондиционер - да</li>
+         </ul>
+     </div>
+        </div>
+      </div>
+      <div class="slider__item">
+        <div style="height: 700px; background: #fff; display: flex; flex-direction: column; justify-content: space-around; align-items: center;">
+           <div class="car-rent"><a href="#"><img src="img/solaris2.png"></a></div>
+     <div class="price-item">
+        <h3>Hyundai Solaris 1.6</h3>
+        <h3><span>От 1600 р/сутки</span></h3>
+         <ul>
+             <li class="year">Год выпуска - 2014</li>
+             <li class="kpp">Коробка передач - автомат</li>
+             <li class="condi">Кондиционер - да</li>
+         </ul>
+     </div>
+        </div>
+      </div>
+      <div class="slider__item">
+        <div style="height: 700px; background: #fff; display: flex; flex-direction: column; justify-content: space-around; align-items:center;">
+           <div class="car-rent"><a href="#"><img src="img/renault3.png"></a></div>
+     <div class="price-item">
+        <h3>Renault Sandero</h3>
+        <h3><span>От 1500 р/сутки</span></h3>
+         <ul>
+             <li class="year">Год выпуска - 2013</li>
+             <li class="kpp">Коробка передач - автомат</li>
+             <li class="condi">Кондиционер - да</li>
+         </ul>
+     </div>
+        </div>
+      </div>
+      <div class="slider__item">
+        <div style="height: 700px; background: #fff; display: flex; flex-direction: column; justify-content: space-around; align-items: center;">
+            <div class="car-rent"><a href="#"><img src="img/rio4.png"></a></div>
+     <div class="price-item">
+        <h3>Kia Rio 1.6</h3>
+        <h3><span>От 1800 р/сутки</span></h3>
+         <ul>
+             <li class="year">Год выпуска - 2015</li>
+             <li class="kpp">Коробка передач - автомат</li>
+             <li class="condi">Кондиционер - да</li>
+         </ul>
+     </div>
+        </div>
+    </div>
+      </div>
+    <a class="slider__control slider__control_left" href="#" role="button"></a>
+    <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+  </div>
+    </div>
+    
+<script>
+        'use strict';
+    var multiItemSlider = (function () {
+      return function (selector, config) {
+        var
+          _mainElement = document.querySelector(selector), // основный элемент блока
+          _sliderWrapper = _mainElement.querySelector('.slider__wrapper'), // обертка для .slider-item
+          _sliderItems = _mainElement.querySelectorAll('.slider__item'), // элементы (.slider-item)
+          _sliderControls = _mainElement.querySelectorAll('.slider__control'), // элементы управления
+          _sliderControlLeft = _mainElement.querySelector('.slider__control_left'), // кнопка "LEFT"
+          _sliderControlRight = _mainElement.querySelector('.slider__control_right'), // кнопка "RIGHT"
+          _wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width), // ширина обёртки
+          _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width), // ширина одного элемента    
+          _positionLeftItem = 0, // позиция левого активного элемента
+          _transform = 0, // значение транфсофрмации .slider_wrapper
+          _step = _itemWidth / _wrapperWidth * 100, // величина шага (для трансформации)
+          _items = []; // массив элементов
+        // наполнение массива _items
+        _sliderItems.forEach(function (item, index) {
+          _items.push({ item: item, position: index, transform: 0 });
+        });
+
+        var position = {
+          getMin: 0,
+          getMax: _items.length - 1,
+        }
+
+        var _transformItem = function (direction) {
+          if (direction === 'right') {
+            if ((_positionLeftItem + _wrapperWidth / _itemWidth - 1) >= position.getMax) {
+              return;
+            }
+            if (!_sliderControlLeft.classList.contains('slider__control_show')) {
+              _sliderControlLeft.classList.add('slider__control_show');
+            }
+            if (_sliderControlRight.classList.contains('slider__control_show') && (_positionLeftItem + _wrapperWidth / _itemWidth) >= position.getMax) {
+              _sliderControlRight.classList.remove('slider__control_show');
+            }
+            _positionLeftItem++;
+            _transform -= _step;
+          }
+          if (direction === 'left') {
+            if (_positionLeftItem <= position.getMin) {
+              return;
+            }
+            if (!_sliderControlRight.classList.contains('slider__control_show')) {
+              _sliderControlRight.classList.add('slider__control_show');
+            }
+            if (_sliderControlLeft.classList.contains('slider__control_show') && _positionLeftItem - 1 <= position.getMin) {
+              _sliderControlLeft.classList.remove('slider__control_show');
+            }
+            _positionLeftItem--;
+            _transform += _step;
+          }
+          _sliderWrapper.style.transform = 'translateX(' + _transform + '%)';
+        }
+
+        // обработчик события click для кнопок "назад" и "вперед"
+        var _controlClick = function (e) {
+          if (e.target.classList.contains('slider__control')) {
+            e.preventDefault();
+            var direction = e.target.classList.contains('slider__control_right') ? 'right' : 'left';
+            _transformItem(direction);
+          }
+        };
+
+        var _setUpListeners = function () {
+          // добавление к кнопкам "назад" и "вперед" обрботчика _controlClick для событя click
+          _sliderControls.forEach(function (item) {
+            item.addEventListener('click', _controlClick);
+          });
+        }
+
+        // инициализация
+        _setUpListeners();
+
+        return {
+          right: function () { // метод right
+            _transformItem('right');
+          },
+          left: function () { // метод left
+            _transformItem('left');
+          }
+        }
+
+      }
+    }());
+    var slider = multiItemSlider('.slider')
+</script>
+<div class="features">
+<div class="feature-item">
+    <p>Прокат автомобилей в Барнауле и Горно-Алтайске</p>
+</div>
+<div class="feature-item">
+    <p>Ежедневно с 9:00 до 20:00 без обеда и выходных</p>
+</div>
+    </div>
+    <div class="footer">
+        <div class="nav-footer">
+            <div>
+            <ul>
+<li><a href="#">О компании</a></li>
+<li><a href="#">Автопарк</a></li>
+<li><a href="#">Услуги</a></li>
+<li><a href="#">Контакты</a></li>
+    </ul>
+</div>
+<div class="number-name">
+    <p>ALTAYCAR - прокат автомобилей </p>
+    <a href="tel:+79133697000"> +7(913)-369-70-00</a>
+    </div>
+        </div>
+        <div class="social">
+            <p>Мы в социальных сетях</p>
+            <div class="soc-btn"><a href="#"><img src="img/insta.png" alt="Instagram"></a></div>
+            <div class="soc-btn"><a href="#"><img src="img/vk.png" alt="VK"></a></div>
+        </div>
+        <div class="logo-footer">
+            <img src="img/logo.png" alt="ALTAYCAR">
+        </div>
+    </div>
+</div>
+
+
+
+  </body>
+</html>
